@@ -6,13 +6,14 @@
 /*   By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:20:36 by natamazy          #+#    #+#             */
-/*   Updated: 2024/04/12 12:28:55 by natamazy         ###   ########.fr       */
+/*   Updated: 2024/04/12 16:44:34 by natamazy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/philo.h"
+#include "philo.h"
 
-int	main(void)
+int	main(int argc, char *argv[])
 {
-	printf("test\n");
+	if (validation(argc, argv) == 1)
+		return (1);
 }

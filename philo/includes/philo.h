@@ -6,7 +6,7 @@
 /*   By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:20:18 by natamazy          #+#    #+#             */
-/*   Updated: 2024/04/12 11:45:08 by natamazy         ###   ########.fr       */
+/*   Updated: 2024/04/12 16:38:34 by natamazy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,15 @@
 # define PHILO_H
 
 // printf
-#include <stdio.h>
+# include <stdio.h>
+
+// pthread
+# include <pthread.h>
+
+// usleep
+# include <unistd.h>
+
+// malloc
+# include <stdlib.h>
 
 #endif
