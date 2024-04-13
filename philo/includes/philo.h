@@ -6,7 +6,7 @@
 /*   By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:20:18 by natamazy          #+#    #+#             */
-/*   Updated: 2024/04/13 11:05:21 by natamazy         ###   ########.fr       */
+/*   Updated: 2024/04/13 12:43:17 by natamazy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ typedef struct s_info
 	int	die_time;
 	int	eat_time;
 	int	sleep_time;
-
 	int	must_eat;
 }	t_info;
 
