@@ -6,7 +6,7 @@
 /*   By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:20:18 by natamazy          #+#    #+#             */
-/*   Updated: 2024/04/12 18:15:15 by natamazy         ###   ########.fr       */
+/*   Updated: 2024/04/13 11:05:21 by natamazy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,24 @@
 // limits
 # include <limits.h>
 
+// bool
+# include <stdbool.h> 
+
 // struct
 typedef struct s_info
 {
-	long long	philos_count;
-	long long	die_time;
-	long long	eat_time;
-	long long	sleep_time;
+	int	philos_count;
+	int	die_time;
+	int	eat_time;
+	int	sleep_time;
 
-	long long	must_eat;
+	int	must_eat;
 }	t_info;
+
+typedef struct s_philo
+{
+	bool	died;
+}	t_philo;
 
 // validation.c
 int	validation(int argc, char *argv[], t_info *all_info);
