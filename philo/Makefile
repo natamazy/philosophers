@@ -6,7 +6,7 @@
 #    By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/14 18:15:04 by natamazy          #+#    #+#              #
-#    Updated: 2024/04/12 18:19:12 by natamazy         ###   ########.fr        #
+#    Updated: 2024/04/16 16:00:40 by natamazy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ OBJS_DIR = objects/
 
 # Source file names
 SRCS_NAME = philo.c \
-			validation.c
+			validation.c \
+			initialization.c
 
 # Objects file names
 OBJS = $(addprefix $(OBJS_DIR), $(OBJS_NAME))
