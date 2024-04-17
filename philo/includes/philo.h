@@ -6,7 +6,7 @@
 /*   By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 11:20:18 by natamazy          #+#    #+#             */
-/*   Updated: 2024/04/16 15:54:06 by natamazy         ###   ########.fr       */
+/*   Updated: 2024/04/16 17:00:31 by natamazy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,6 +67,6 @@ typedef struct s_info
 int	validation(int argc, char *argv[], t_info *all_info);
 
 // init.c
-int	initialization(t_info *all_info, int i);
+int	initialization(t_info *all_info);
 
 #endif
