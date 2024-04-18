@@ -6,12 +6,12 @@
 #    By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/14 18:15:04 by natamazy          #+#    #+#              #
-#    Updated: 2024/04/18 21:11:29 by natamazy         ###   ########.fr        #
+#    Updated: 2024/04/18 21:05:52 by natamazy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 # Project name
-NAME = philo
+NAME = philo_bonus
 
 # Compilator
 CC = cc
@@ -19,7 +19,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror -Iincludes #-g3 -fsanitize=thread
 
 # Headers
-HEADERS = includes/philo.h
+HEADERS = includes/philo_bonus.h
 
 # Source directory
 SRCS_DIR = sources/

@@ -6,7 +6,7 @@
 /*   By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 15:32:34 by natamazy          #+#    #+#             */
-/*   Updated: 2024/04/18 17:39:03 by natamazy         ###   ########.fr       */
+/*   Updated: 2024/04/18 21:09:47 by natamazy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,6 +83,7 @@ void	creating_threads(t_info *all_info)
 	int	i;
 
 	i = -1;
+	get_time();
 	while (++i < all_info->philos_count)
 		pthread_create(&all_info->philos[i].thread, NULL,
 			(void *) start_sim, all_info->philos + i);
