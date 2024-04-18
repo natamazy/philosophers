@@ -6,7 +6,7 @@
 /*   By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/12 16:46:31 by natamazy          #+#    #+#             */
-/*   Updated: 2024/04/13 19:41:12 by natamazy         ###   ########.fr       */
+/*   Updated: 2024/04/18 11:19:46 by natamazy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,10 @@ long long	ft_atoi(const char *str, int i, int j, int flag)
 int	validation(int argc, char *argv[], t_info *all_info)
 {
 	if (argc < 5 || argc > 6)
-		return (printf("\033[0;31mIncorect arguments count\n\033[0m"));
+	{
+		printf("\033[0;31mIncorect arguments count\n\033[0m");
+		return (1);
+	}
 	all_info->philos_count = ft_atoi(argv[1], 0, 0, 0);
 	all_info->die_time = ft_atoi(argv[2], 0, 0, 0);
 	all_info->eat_time = ft_atoi(argv[3], 0, 0, 0);

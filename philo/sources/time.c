@@ -1,24 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   philo.c                                            :+:      :+:    :+:   */
+/*   time.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: natamazy <natamazy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/12 11:20:36 by natamazy          #+#    #+#             */
-/*   Updated: 2024/04/18 17:30:19 by natamazy         ###   ########.fr       */
+/*   Created: 2024/04/18 11:17:33 by natamazy          #+#    #+#             */
+/*   Updated: 2024/04/18 15:27:35 by natamazy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "philo.h"
 
-int	main(int argc, char *argv[])
+long long	get_time(void)
 {
-	t_info	all_info;
+	static long long	start;
+	struct timeval		time;
 
-	if (validation(argc, argv, &all_info) == 1)
-		return (1);
-	if (initialization(&all_info) == 1)
-		return (1);
-	creating_threads(&all_info);
+	if (start == 0)
+	{
+		gettimeofday(&time, NULL);
+		start = (time.tv_usec / 1000 + time.tv_sec * 1000);
+	}
+	gettimeofday(&time, NULL);
+	return ((time.tv_sec * 1000) + (time.tv_usec / 1000) - start);
+}
+
+void	my_sleep(long long time1)
+{
+	long long	time2;
+
+	time2 = get_time();
+	while (get_time() - time2 <= time1)
+		usleep(500);
 }
